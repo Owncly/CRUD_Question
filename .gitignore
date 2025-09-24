@@ -1,0 +1,22 @@
+#React 
+client/node_modules/
+client/build/
+client/.env
+
+#Python
+server/__pycache__/
+server/venv/
+server/.env
+server/*.pyc
+
+#Global
+*.log
+.env
+
+#Docker Rubbish
+*.db
+*.sqlite
+*.log
+*.pid
+*.sock
+docker-compose.override.yml
