@@ -6,21 +6,19 @@ Data is calculated using the backend, this convention was decided upon due to "A
 
 # Setup
 Clone the repo to a local area
-This requires a .env file, place this in the origin directory where it is saved
+This requires 2 .env files, place the first in the origin directory where it is saved and the second in the client directory
 Feel free to change the data if preferred or just copy paste, an example is below:
 
-## .env 
+## .env 1
 POSTGRES_USER=user
 POSTGRES_PASSWORD=secureVery888Secure()
 POSTGRES_DB=db
 DATABASE_URL=postgresql://user:secureVery888Secure()@db:5432/db
-
 REACT_APP_API_BASE=http://localhost:8000
-
 JWT_SECRET=exbvm
-
 ALLOWED_ORIGINS=http://localhost:3000
 
+## .env 2
 REACT_APP_API_BASE=http://localhost:8000
 REACT_APP_API_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJyZWFjdC1jbGllbnQiLCJleHAiOjE3NTkxNzc1NzAsInNjb3BlIjoiZnJvbnRlbmQtb25seSJ9.UO-o5hJ44GRpkH4Wq9YZS-9L5YHzMo6YIcTVL-YX17g
 
