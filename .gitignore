@@ -20,3 +20,7 @@ server/*.pyc
 *.pid
 *.sock
 docker-compose.override.yml
+
+
+#Extras
+client/src/services/UserGetService.js

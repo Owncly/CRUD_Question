@@ -1,0 +1,20 @@
+/* Using Rem when applicable for scaling */
+body {
+  background-color: #9696a3;
+  color: #352b2b;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.page h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
