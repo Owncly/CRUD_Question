@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from .models import User
-from .age_calc import calculate_age
+from app.utils.age_calc import calculate_age
 
 
 def get_users(db: Session):
@@ -21,6 +21,7 @@ def get_users(db: Session):
 def create_user(db: Session, user_data: dict):
     dob = user_data["dob"]
     user_data["age"] = calculate_age(dob)  
+    #Unpacks into class
     user = User(**user_data)
     db.add(user)
     db.commit()
