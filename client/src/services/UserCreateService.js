@@ -4,7 +4,6 @@ const API_TOKEN = process.env.REACT_APP_API_TOKEN;
 
 export const UserCreateService = {
   createUser: async ({ first_name, last_name, dob }) => {
-    console.log("Token:", API_TOKEN);
     const res = await fetch(`${API_BASE}/users/create`, {
       method: 'POST',
       headers: {
