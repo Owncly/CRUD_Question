@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { UserGetService } from '../services/UserGetService';
+import { UserCreateService } from '../services/UserCreateService';
+import { UserDeleteService } from '../services/UserDeleteService';
 import TableDisplay from './TableDisplay';
 import UserForm from './NewUserForm'; 
 import '../styles/TableWhole.css';
@@ -27,7 +29,7 @@ function TableWhole() {
   //Delete users using await
   const handleDelete = async (id) => {
     try {
-      await UserGetService.deleteUser(id);
+      await UserDeleteService.deleteUser(id);
       setUsers(prev => prev.filter(user => user.id !== id));
     } catch (error) {
       console.error('Failed to delete user:', error);
@@ -37,7 +39,7 @@ function TableWhole() {
   //Create user and update table
   const handleCreate = async (newUser) => {
     try {
-      const created = await UserGetService.createUser(newUser);
+      const created = await UserCreateService.createUser(newUser);
       setUsers(prev => [...prev, created]);
       setShowForm(false);
     } catch (error) {

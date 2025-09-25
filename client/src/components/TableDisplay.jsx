@@ -19,7 +19,7 @@ function TableDisplay({ users, handleDelete }) {
           {users.map(user => (
             <tr key={user.id}>
               <td>{user.first_name}</td>
-              <td>{user.second_name}</td>
+              <td>{user.last_name}</td>
               <td>{user.age}</td>
               <td>{user.dob}</td>
               <td>
