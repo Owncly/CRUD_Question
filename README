@@ -1,15 +1,15 @@
-#Application
+# Application
 A full-stack application built with FastAPI, React, and PostgreSQL, containerised using Docker Compose. It supports secure user creation, retrieval, and deletion, with JWT-based authorization to ensure only the frontend can access backend endpoints.
 
-#Clarification
+# Clarification
 Data is calculated using the backend, this convention was decided upon due to "A user has the following attributes - age" therefore I am storing age in this database. However, a runner or similar would need to be used to update these dates as it is currently. Without this requirement I would have just stored DOB and ran a client side calculation to reduce server burden.
 
-#Setup
+# Setup
 Clone the repo to a local area
 This requires a .env file, place this in the origin directory where it is saved
 Feel free to change the data if preferred or just copy paste, an example is below:
 
-##.env 
+## .env 
 POSTGRES_USER=user
 POSTGRES_PASSWORD=secureVery888Secure()
 POSTGRES_DB=db
@@ -25,7 +25,7 @@ REACT_APP_API_BASE=http://localhost:8000
 REACT_APP_API_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJyZWFjdC1jbGllbnQiLCJleHAiOjE3NTkxNzc1NzAsInNjb3BlIjoiZnJvbnRlbmQtb25seSJ9.UO-o5hJ44GRpkH4Wq9YZS-9L5YHzMo6YIcTVL-YX17g
 
 
-##Run
+## Run
 run-> 
 docker compose up --build
 Accessible at http://localhost:3000/
